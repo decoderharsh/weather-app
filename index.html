@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+</head>
+
+<body class="relative min-h-screen flex items-center justify-center 
+             bg-cover bg-center bg-no-repeat transition-all duration-700"
+      style="background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429')">
+
+
+    
+    <div class="w-96 p-8 rounded-2xl bg-white/25 backdrop-blur-xl border border-white/40  shadow-2xl text-center text-white">
+
+        <h1 class="text-2xl font-bold mb-1 text-white">
+            🌤 Weather App
+        </h1>
+
+        <p class="mb-6 text-white/80">
+            Simple & Clean Weather Checker
+        </p>
+
+
+        <div class="relative mb-6">
+
+            <input 
+                type="text" id="inputbox" placeholder="Enter city name..." class="w-full p-3 rounded-lg  bg-white/60  border-2 border-white/40  text-gray-800  placeholder-gray-600 /70focus:border-blue-400  focus:bg-white/40  focus:outline-none transition duration-300">
+
+            <button 
+                id="search"   class="absolute right-2 top-1/2 -translate-y-1/2  bg-blue-500  hover:bg-blue-600 text-white p-2 rounded-lg  transition duration-300">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        
+        <div class="space-y-3">
+             <p id="errorMsg" class="text-red-500 text-lg mt-2 hidden ">
+              Please enter city name
+            </p>
+
+            <h2 id="cityName" class="text-xl font-semibold"></h2>
+
+            <p id="temperature" class="text-4xl font-bold"></p>
+
+            <p id="description" class="capitalize text-white/90"></p>
+
+            <p id="humidity" class="text-white/80"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
